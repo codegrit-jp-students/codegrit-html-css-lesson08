@@ -169,6 +169,7 @@ ul, li {
 
 ```css
 img {
+  width: 100%;
   max-width: 100%;
 }
 ```
