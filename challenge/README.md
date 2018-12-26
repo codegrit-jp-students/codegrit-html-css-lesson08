@@ -24,26 +24,33 @@
 
 ## 概要
 
-チャレンジ7でカラムを調整して作成したWebページを、レスポンシブデザインにしてみましょう。
+チャレンジ7で作成したWebページを、レスポンシブデザインにしてみましょう。見え方は以下のリンク先の画像を参考にして下さい。
+
+- [デスクトップサイズの表示](https://github.com/codegrit-jp-students/codegrit-html-css-ch08-starter/blob/master/images/ch08-final-lg.png)
+- [タブレットサイズの表示](https://github.com/codegrit-jp-students/codegrit-html-css-ch08-starter/blob/master/images/ch08-final-md.png)
+- [モバイルサイズの表示](https://github.com/codegrit-jp-students/codegrit-html-css-ch08-starter/blob/master/images/ch08-final-sm.png)
 
 ## スターターファイル
 
-チャレンジ7で作成したファイルを利用して下さい。
+以下のURLのコードをテンプレートとして利用して下さい。
+
+- [codegrit-html-css-ch08-starter](https://github.com/codegrit-jp-students/codegrit-html-css-ch08-starter)
 
 # マイルストーン
 
 ## 要件（spec）
 
-HTMLとCSSのソースコードは、Class 7で使用したコードをもとに編集してみましょう。
-課題７で作成したご自身のデスクトップサイズに設定してあるカラムはそのままで、そのほかのこれから設定していく端末にはカラムは使用せずに、レスポンシブデザインを以下の全端末に対応させてください。
+- ブレークポイントは以下の5つを設定しましょう。
 
-- デスクトップ（1440px, 1280px, 1024px）
-- タブレット端末（iPad Pro, iPad）
-- モバイル端末１（iPhone 8 Plus, iPhone 7 Plus）
-- モバイル端末２（Nexus 6P, Nexus 5X）
-- モバイル端末３（iPhone X, iPhone 8, iPhone 7）
-- モバイル端末４（Galaxy S5）
-- モバイル端末５（mobile S size 例：iPhone 5s)
+xs: 480px未満
+sm: 480px以上768px未満
+md: 768px以上992px未満
+lg: 992px以上1100px未満
+xl: 1100px以上
+
+## ヒント
+
+- bottom-sectionの靴の表示箇所は、`.reversed-row-md`のようなクラスを定義して、画面サイズに合わせてコンテンツの順番を入れ替えましょう。
 
 ## 評価
 
