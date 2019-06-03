@@ -2,7 +2,6 @@
 
 前回のレッスンでは、グリッドレイアウトを利用したレイアウト方法について学びました。この項目ではこのグリッドレイアウトをブレークポイントに併せて変更するにはどうすればいいのか基本を学びます。今回は単純化のために3つのグリッドで、ブレークポイントを`600px`の一つだけのサイトを作ってみましょう。
 
-
 ### 1. containerとモバイル版のグリッドを組む
 
 前回のレッスンの例で作成したグリッドを少し変更したものが以下です。今回はガーターの幅を`20px`ではなく`30px`に設定しています。また簡単にするため12のカラムに分けるのではなく3つのコラムに分けています。
@@ -51,10 +50,12 @@ ul, li {
   width: 100%;
 }
 
-.col-1, col-2, .col-3 {
+.col-1, .col-2, .col-3 {
   padding: 0 15px;
 }
 ```
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/yd4e5hjw/1/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ### 2. ブレークポイントごとにグリッドを組む
 
@@ -105,6 +106,8 @@ ul, li {
 
 上記のように、`@media (min-width: 600px)`以下で、600px以上の画面サイズの時用のCSSスタイルを定義しています。
 
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/f9Lp5sb7/1/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 ### 3. HTMLで構成を表現する。
 
 コンテンツの構成をHTMLで書きます。
@@ -141,7 +144,7 @@ ul, li {
               <div class="col-3 col-lg-1">
                 <img src="../../images/work.jpg">
               </div>
-              <div class="col-3 ol-lg-1">
+              <div class="col-3 col-lg-1">
                 <img src="../../images/play.jpg">
               </div>
               <div class="col-3 col-lg-1">
@@ -165,6 +168,8 @@ ul, li {
 
 ![sample1](./images/sample1.png)
 
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/f9Lp5sb7/2/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 上手く表示されてないですね。これはなぜかというと、上記で述べたレスポンシブイメージの設定がまだされてないからです。そこで以下を追加します。
 
 ```css
@@ -177,6 +182,8 @@ img {
 すると、以下のように表示が修正されました。
 
 ![sample1-2](./images/sample1-2.png)
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/8wpf06n5/1/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 [サンプルコード](https://github.com/codegrit-jp-students/codegrit-html-css-lesson08-samples/tree/master/responsive-image)
 
@@ -191,6 +198,8 @@ img {
 そこで、`.row`セレクタに`flex-wrap: wrap`を追加しましょう。
 
 ![sample2-2](./images/sample2-2.png)
+
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/yu2mfs6k/1/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 無事に表示することが出来ました。
 
